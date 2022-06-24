@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <!-- Tab Settings -->
+        <title>Framework</title>
+
+        <!-- Meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- CSS & JS -->
+        <link rel="stylesheet" href="style.css" />
+
+    </head>
+
+    <body>
+        <nav>
+            <input type="image" class="navbar-toggler nav-icons" id="navbar-toggler" src="icons/menu.png">
+                <li class="nav-brand">
+                    <a href="">Brand</a>
+                </li>
+                <div class="collapsible">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Link 2</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-right">
+                        <li class="nav-item">
+                            <input type="image" onclick="toggleModal()" src="icons/notification.png" class="nav-icons" />
+                        </li>
+                        <li class="nav-item">
+                            <input type="image" src="icons/avatar-placeholder.png" class="nav-icons" />
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+
+        <div class="dashboard-modal" id="dashboard-modal" style="display: none;">
+            <div class="dashboard-box">
+                <input type="image" class="close-modal-button" src="icons/close.png" onclick="toggleModal()">
+                <h2>Modal Header</h2>
+                <hr>
+                <p>This is a testing paragraph in a modal. The purpose of this CSS framework is to test out CSS and 
+                    Javascript that can be used throughout multiple Sky Enterprises projects so code doesn't need to 
+                    be re-written from scratch all the time. A little bit of tweaking to the objects in this file 
+                    should allow full customisation. Here are some cool submit buttons to test out</p>
+
+                <div class="floating-control">
+                    <input id="username" class="floating-input" name="username" type="text" placeholder="Username" />
+                    <label for="username" class="floating-label" data-content="Username">
+                        <span class="visually-hidden">Username</span>
+                    </label>
+                </div>
+
+                <div class="floating-control">
+                    <input id="password" type="password" class="floating-input" name="password" type="text" placeholder="Password" />
+                    <label for="password" class="floating-label" data-content="Password">
+                        <span class="visually-hidden">Password</span>
+                    </label>
+                </div>
+
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="main.js"></script>
+    </body>
+</html>
