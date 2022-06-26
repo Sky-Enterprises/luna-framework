@@ -1,5 +1,6 @@
 /* Main Styling */
 body {
+    position: relative;
     overflow-x: hidden;
     scroll-behavior: smooth;
     background-color: #141414;
@@ -8,12 +9,27 @@ body {
     margin: 0;
     max-width: 100%;
 }
-button, input {
-    border: none;
-    color: #e7e7e7;
-    transition: 0.2s ease-in-out;
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    width: 100%;
+    background-color: #222;
+    text-align: center;
 }
-button, input[type=button], input[type=submit] {
+footer a {
+    color: #aaa;
+    transition: 0.2s;
+}
+footer a:hover {
+    color: #ccc;
+}
+button, input, textarea {
+    border: none;
+    transition: 0.2s ease-in-out;
+    color: #e7e7e7;
+}
+button, input[type=button], input[type=submit], input[type=reset] {
     padding: 15px;
     padding-left: 35px;
     padding-right: 35px;
@@ -23,10 +39,10 @@ button, input[type=button], input[type=submit] {
 button:hover, input[type=button]:hover, input[type=submit]:hover {
     background-color: #353535;
 }
-button, input {
+button, input[type=button] {
     cursor: pointer;
 }
-input:focus {
+input:focus, textarea:focus {
     outline: none;
 }
 p {
@@ -37,6 +53,12 @@ a {
 }
 hr {
     border: 1px solid #777;
+}
+.index-main {
+    padding: 60px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    max-width: 1300px;
 }
 
 /* Navbar */
@@ -68,6 +90,9 @@ nav ul li {
     align-items: center;
     font-weight: 600;
 }
+.nav-brand img {
+    margin-right: 8px;
+}
 .nav-brand a {
     margin-top: 1px;
     color: #008cff;
@@ -83,6 +108,9 @@ nav ul li {
 .nav-icons {
     width: 25px;
     height: 25px;
+}
+.active {
+    font-weight: 500;
 }
 
 /* Custom Navbar Properties */
