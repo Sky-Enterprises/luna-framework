@@ -8,19 +8,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- CSS & JS -->
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="luna-framework.css" />
 
     </head>
 
     <body>
-        <nav>
+        <nav class="navbar">
             <input type="image" class="navbar-toggler nav-icons" id="navbar-toggler" src="icons/menu.png">
+            <div class="nav-container">
                 <li class="nav-brand">
                     <img class="nav-icons" src="icons/256x256.jpg">
                     <a href="">Brand</a>
                 </li>
                 <div class="collapsible">
-                    <ul>
+                    <ul class="navbar-ul">
                         <li class="nav-item">
                             <a class="nav-link active" href="">Link 1</a>
                         </li>
@@ -28,7 +29,7 @@
                             <a class="nav-link" href="">Link 2</a>
                         </li>
                     </ul>
-                    <ul class="nav-right">
+                    <ul class="navbar-ul nav-right">
                         <li class="nav-item">
                             <input type="image" onclick="toggleModal()" src="icons/notification.png" class="nav-icons" />
                         </li>
@@ -37,6 +38,7 @@
                         </li>
                     </ul>
                 </div>
+            </div>
         </nav>
 
         <div class="dashboard-modal" id="dashboard-modal" style="display: none;">
@@ -68,14 +70,29 @@
         </div>
 
         <div class="index-main">
+            <h1>Welcome to the Luna Framework</h1>
+            <hr>
+            <p>A work-in-progress CSS framework designed by <a href="https://www.skyenterprisesau.com">Sky Enterprises</a></p>
+            <br>
 
+            <h3>Pre & Code Block Example</h3>
+            <pre>
+                <code>
+<!--                            --><span class="pre-title">.nav-icons img</span> {  <span class="pre-comment">// Your image/icon css</span>
+<!--                            -->    <span class="pre-variable">width</span>: <span class="pre-variable-value">25px</span>;
+<!--                            -->    <span class="pre-variable">height</span>: <span class="pre-variable-value">25px</span>;
+<!--                            -->    <span class="pre-variable">filter</span>: <span class="pre-variable-special">brightness</span>(<span class="pre-variable-value">0</span>) <span class="pre-variable-special">saturate</span>(<span class="pre-variable-value">100%</span>);           <span class="pre-comment">// Prepended filter</span>
+<!--                            -->    <span class="pre-variable">filter</span>: <span class="pre-variable-special">invert</span>(<span class="pre-variable-value">40%</span>) <span class="pre-variable-special">sepia</span>(<span class="pre-variable-value">89%</span>) <span class="pre-variable-special">contrast</span>(<span class="pre-variable-value">109%</span>);  <span class="pre-comment">// Filter</span>
+<!--                            -->}
+                </code>
+            </pre>
         </div>
 
         <footer>
-            <span>&copy; Luna Framework 2022. All rights reserved. <span>&middot;</span> Brought to you by <a href="https://www.skyenterprisesau.com">Sky Enterprises</a></span>
+            <span>&copy; Luna Framework 2022 <span class="md">&middot;</span> All rights reserved <span class="md">&middot;</span> Brought to you by <a href="https://www.skyenterprisesau.com">Sky Enterprises</a></span>
         </footer>
 
         <!-- JS -->
-        <script src="main.js"></script>
+        <script src="luna-framework.js"></script>
     </body>
 </html>
