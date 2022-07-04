@@ -16,10 +16,17 @@ footer {
     position: absolute;
     bottom: 0;
     padding: 30px;
-    width: 100%;
+    width: calc(100% - 60px);
     background-color: #222;
     text-align: center;
     font-size: 15px;
+}
+footer a {
+    color: #aaa;
+    transition: 0.2s;
+}
+footer a:hover {
+    color: #ccc;
 }
 footer .md {
     margin-left: 5px;
@@ -290,6 +297,7 @@ pre {
     border-radius: 5px;
     max-width: 700px;
     background-color: #222831;
+    overflow-x: scroll;
 }
 
 /* CSS Styles */
@@ -318,6 +326,8 @@ pre {
 
     /* Navbar */
     .navbar {
+        padding-left: 20px;
+        width: calc(100% - 22px);
         background-color: #090909;
     }
     .navbar-toggler {
@@ -330,7 +340,7 @@ pre {
     .collapsible {
         position: absolute;
         top: 56px;
-        margin-left: -3rem;
+        margin-left: -6rem;
         max-height: 0;
         width: calc(100% - 2rem);
     }
