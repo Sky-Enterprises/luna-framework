@@ -28,14 +28,31 @@
                         <li class="nav-item">
                             <a class="nav-link" href="">Link 2</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" nav-target="nav-dropdown" title="Dropdown">
+                                Dropdown Link
+                            </a>
+                            <ul class="dropdown-menu" id="nav-dropdown">
+                                <li><a class="dropdown-item" href="/skymirror" title="SkyMirror">SkyMirror</a></li>
+                                <li><a class="dropdown-item" href="/theatro" title="Theatro">Theatro</a></li>
+                                <li><a class="dropdown-item" href="/theatro-music" title="Theatro Music">Theatro Music</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="/roadmap" title="Roadmap">Roadmap</a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="navbar-ul nav-right">
                         <li class="nav-item">
                             <input type="image" onclick="toggleModal()" src="icons/notification.png" class="nav-icons" />
                         </li>
                         <li class="nav-item">
-                            <input type="image" src="icons/avatar-placeholder.png" class="nav-icons" />
+                            <input type="image" src="icons/avatar-placeholder.png" class="nav-icons" onmouseover="profileDropdown()" />
                         </li>
+                        <div class="profile-dropdown" id="profile-dropdown">
+                            <li><img src="icons/profile.png" />Profile</li>
+                            <li><img src="icons/settings.png" />Settings</li>
+                            <li class="profile-dropdown-logout">Log Out</li>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -74,6 +91,74 @@
             <hr>
             <p>A work-in-progress CSS framework designed by <a href="https://www.skyenterprisesau.com">Sky Enterprises</a></p>
             <br>
+
+            <p><a href="https://www.skyenterprisesau.com">Sky Enterprises</a> was founded in 2017 with the goal of creating the technology of the 
+                future, today. Some technology that has long been considered 'science fiction' and 
+                'decades away' is slowly becoming more prevalent in today's world. Self-driving cars, 
+                advanced AI systems and the dawn of a new space race are some examples of technological 
+                developments that are launching humanity into a new industrial revolution, the biggest 
+                one yet.</p>
+
+            <a href="">Test Link</a><br>
+            <a href="" class="arrow-link">Test Link with Arrow</a>
+
+            <br><br><br>
+
+            <form class="form-container">
+                <div class="form-header">
+                    <h3>Form Demo</h3>
+                    <hr>
+                </div>
+                <div class="form-column">
+                    <div class="floating-control">
+                        <input id="username" class="floating-input" name="username" type="text" placeholder="Username" />
+                        <label for="username" class="floating-label" data-content="Username">
+                            <span class="visually-hidden">Username</span>
+                        </label>
+                    </div>
+        
+                    <div class="floating-control">
+                        <input id="password" type="password" class="floating-input" name="password" type="text" placeholder="Password" />
+                        <label for="password" class="floating-label" data-content="Password">
+                            <span class="visually-hidden">Password</span>
+                        </label>
+                    </div>
+
+                    <small class="form-small">This is a demo of a form with floating inputs.</small>
+                </div>
+
+                <div class="form-column">
+                    <div class="form-inline">
+                        <div class="floating-control floating-select">
+                            <select class="form-select" id="film-rating">
+                                <option value="g">G</option>
+                                <option value="pg">PG</option>
+                                <option value="m">M</option>
+                                <option value="ma">MA 15+</option>
+                                <option value="R">R 18+</option>
+                            </select>
+                            <label for="film-rating" class="floating-label" data-content="Rating">
+                                <span class="visually-hidden">Rating</span>
+                            </label>
+                        </div>
+            
+                        <div class="floating-control">
+                            <input class="form-select" id="release-date" type="date">
+                            <label for="release-date" class="floating-label" data-content="Release Date">
+                                <span class="visually-hidden">Release Date</span>
+                            </label>
+                        </div>
+                    </div>
+        
+                    <div class="floating-control floating-textarea">
+                        <textarea class="floating-input" placeholder="Summary" onkeyup="checkCharacters(this)" maxlength="200"></textarea>
+                        <label for="Summary" class="floating-label" data-content="Summary">
+                            <span class="visually-hidden">Summary</span>
+                        </label>
+                        <span id="character-count">200</span>
+                    </div>
+                </div>
+            </form>
 
             <h3>Pre & Code Block Example</h3>
             <pre>
