@@ -284,6 +284,7 @@ hr {
 /* Custom Navbar Properties */
 .collapsible {
     position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
     flex-basis: 100%;
